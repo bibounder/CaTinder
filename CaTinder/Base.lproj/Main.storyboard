@@ -190,10 +190,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line-2-256" translatesAutoresizingMaskIntoConstraints="NO" id="3wg-oR-lAP">
                                 <rect key="frame" x="242" y="274" width="64" height="3"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logocatinder" translatesAutoresizingMaskIntoConstraints="NO" id="jBF-aX-meq">
-                                <rect key="frame" x="111" y="20" width="152" height="220"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nom d" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BSV-Bi-poF">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nom" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BSV-Bi-poF">
                                 <rect key="frame" x="69" y="297" width="237" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.2165177539" green="0.21968742820000001" blue="0.23591289739999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -230,7 +227,22 @@
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="envoyer-normal" translatesAutoresizingMaskIntoConstraints="NO" id="5Tq-N2-375">
                                 <rect key="frame" x="59" y="499" width="257" height="44"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" link="YES" image="YES"/>
+                                </accessibility>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logocatinder" translatesAutoresizingMaskIntoConstraints="NO" id="jBF-aX-meq">
+                                <rect key="frame" x="111" y="20" width="152" height="220"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5EQ-0E-gm1">
+                                <rect key="frame" x="69" y="506" width="237" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="FPL-eX-M0u" kind="show" id="USG-aS-OCe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.90196078431372551" green="0.45882352941176469" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -276,6 +288,24 @@
                                 <color key="textColor" red="0.3316169507575758" green="0.3316169507575758" blue="0.3316169507575758" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.47512231691919193" green="0.47512231691919193" blue="0.47512231691919193" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="circle2" translatesAutoresizingMaskIntoConstraints="NO" id="6rt-LA-Bed">
+                                <rect key="frame" x="213" y="403" width="133" height="133"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="circle2" translatesAutoresizingMaskIntoConstraints="NO" id="gAW-fG-0NS">
+                                <rect key="frame" x="46" y="403" width="133" height="133"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="unlike" translatesAutoresizingMaskIntoConstraints="NO" id="bQh-J6-McF">
+                                <rect key="frame" x="76" y="434" width="76" height="70"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="circle2" translatesAutoresizingMaskIntoConstraints="NO" id="oon-kT-wfq">
+                                <rect key="frame" x="167" y="441" width="58" height="58"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="info" translatesAutoresizingMaskIntoConstraints="NO" id="8eI-Id-sj9">
+                                <rect key="frame" x="176" y="449" width="40" height="41"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="TAF-EA-sfh">
+                                <rect key="frame" x="242" y="433" width="80" height="72"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -304,13 +334,17 @@
     <resources>
         <image name="3679422-pinned-polaroid-film-on-white-background" width="450" height="450"/>
         <image name="cat-exemple" width="1536" height="1536"/>
+        <image name="circle2" width="208" height="203"/>
         <image name="connexion-normal" width="292" height="48"/>
         <image name="envoyer-normal" width="307" height="52"/>
         <image name="fb-connect" width="1167" height="171"/>
+        <image name="info" width="128" height="128"/>
         <image name="lesamisdepepito" width="284" height="76"/>
+        <image name="like" width="256" height="256"/>
         <image name="line-2-256" width="256" height="256"/>
         <image name="logocatinder" width="175" height="253"/>
         <image name="second" width="30" height="30"/>
         <image name="twitter-co" width="594" height="76"/>
+        <image name="unlike" width="256" height="256"/>
     </resources>
 </document>
