@@ -11,9 +11,9 @@
 		A950D0341AE7938E00710AAE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A950D0331AE7938E00710AAE /* FirstViewController.swift */; };
 		A950D0361AE7938E00710AAE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A950D0351AE7938E00710AAE /* SecondViewController.swift */; };
 		A950D0391AE7938E00710AAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A950D0371AE7938E00710AAE /* Main.storyboard */; };
-		A950D03B1AE7938E00710AAE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A950D03A1AE7938E00710AAE /* Images.xcassets */; };
 		A950D03E1AE7938E00710AAE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A950D03C1AE7938E00710AAE /* LaunchScreen.xib */; };
 		A950D04A1AE7938F00710AAE /* CaTinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A950D0491AE7938F00710AAE /* CaTinderTests.swift */; };
+		A950D0531AE7C2D300710AAE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A950D03A1AE7938E00710AAE /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,9 +195,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A950D0531AE7C2D300710AAE /* Images.xcassets in Resources */,
 				A950D0391AE7938E00710AAE /* Main.storyboard in Resources */,
 				A950D03E1AE7938E00710AAE /* LaunchScreen.xib in Resources */,
-				A950D03B1AE7938E00710AAE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +413,7 @@
 				A950D04F1AE7938F00710AAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A950D0501AE7938F00710AAE /* Build configuration list for PBXNativeTarget "CaTinderTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +422,7 @@
 				A950D0521AE7938F00710AAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
