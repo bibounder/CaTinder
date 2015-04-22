@@ -110,7 +110,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.87645991161616166" green="0.36377905977929215" blue="0.62231065942174035" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.64349188656052636" blue="0.84884261234999847" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="MOx-s8-J3Z" firstAttribute="bottom" secondItem="P6M-av-FWe" secondAttribute="bottom" id="2Ls-ZF-DGn"/>
                             <constraint firstItem="Eko-sP-d7a" firstAttribute="centerX" secondItem="r2S-tz-5Dy" secondAttribute="centerX" id="3AQ-Su-lOn"/>
@@ -266,9 +266,18 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3679422-pinned-polaroid-film-on-white-background" translatesAutoresizingMaskIntoConstraints="NO" id="U01-G4-LVR">
                                 <rect key="frame" x="3" y="28" width="369" height="348"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="GLr-3n-Sb7" appends="YES" id="m7V-n0-8Dh"/>
+                                </connections>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat-exemple" translatesAutoresizingMaskIntoConstraints="NO" id="KTX-5U-c9T">
                                 <rect key="frame" x="77" y="83" width="214" height="205"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="kt5-XB-6Kb" appends="YES" id="i5N-Fa-cRD"/>
+                                    <outletCollection property="gestureRecognizers" destination="wMK-ae-XfB" appends="YES" id="BCm-O9-HUT"/>
+                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Catname, " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcD-54-SQD">
                                 <rect key="frame" x="86" y="304" width="70" height="21"/>
@@ -306,14 +315,57 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="TAF-EA-sfh">
                                 <rect key="frame" x="242" y="433" width="80" height="72"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTm-Zz-xZ5">
+                                <rect key="frame" x="46" y="403" width="113" height="133"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FK5-2z-DvC">
+                                <rect key="frame" x="233" y="403" width="113" height="133"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7o-vK-QJt">
+                                <rect key="frame" x="176" y="449" width="40" height="41"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YvM-Y5-ex9" kind="showDetail" id="8CK-eR-xRt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Adm-Bl-kTa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="kt5-XB-6Kb"/>
+                <swipeGestureRecognizer direction="right" id="wMK-ae-XfB"/>
+                <swipeGestureRecognizer direction="right" id="GLr-3n-Sb7"/>
             </objects>
-            <point key="canvasLocation" x="1811.5" y="-305.5"/>
+            <point key="canvasLocation" x="1813.5" y="-443.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oWc-G3-3hz">
+            <objects>
+                <viewController id="YvM-Y5-ex9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pUa-cG-cG1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ar9-bU-lXz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Oc-dt-696">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.85882352941176465" green="0.40784313725490196" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VBb-Mi-Wtm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1813.5" y="402.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
