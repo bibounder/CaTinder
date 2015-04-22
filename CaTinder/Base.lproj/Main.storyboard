@@ -103,8 +103,8 @@
                                     <constraint firstAttribute="height" constant="34" id="vGm-SX-u1b"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lesamisdepepito" translatesAutoresizingMaskIntoConstraints="NO" id="Eko-sP-d7a">
-                                <rect key="frame" x="16" y="576" width="343" height="71"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lesamisdepepito" translatesAutoresizingMaskIntoConstraints="NO" id="Eko-sP-d7a">
+                                <rect key="frame" x="16" y="596" width="343" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="dbF-Od-P6g"/>
                                 </constraints>
@@ -243,6 +243,12 @@
                                     <segue destination="FPL-eX-M0u" kind="show" id="USG-aS-OCe"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="lesamisdepepito" translatesAutoresizingMaskIntoConstraints="NO" id="UBF-y2-BrU">
+                                <rect key="frame" x="5" y="596" width="343" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="yO3-E7-0Gr"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.90196078431372551" green="0.45882352941176469" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
