@@ -40,9 +40,9 @@
 		A950D0431AE7938F00710AAE /* CaTinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaTinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A950D0481AE7938F00710AAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A950D0491AE7938F00710AAE /* CaTinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaTinderTests.swift; sourceTree = "<group>"; };
-		A97EFCBF1AE8E9940030582C /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
 		A97EFCE81AE8FCB90030582C /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		A97EFCEA1AE8FD170030582C /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		A97EFCED1AE909480030582C /* FBBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBBridge.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,9 +89,9 @@
 		A950D02E1AE7938E00710AAE /* CaTinder */ = {
 			isa = PBXGroup;
 			children = (
+				A97EFCED1AE909480030582C /* FBBridge.h */,
 				A950D0311AE7938E00710AAE /* AppDelegate.swift */,
 				A950D0331AE7938E00710AAE /* FirstViewController.swift */,
-				A97EFCBF1AE8E9940030582C /* Bridge-Header.h */,
 				A950D0351AE7938E00710AAE /* SecondViewController.swift */,
 				A950D0371AE7938E00710AAE /* Main.storyboard */,
 				A950D03A1AE7938E00710AAE /* Images.xcassets */,
@@ -282,6 +282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -326,6 +327,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -363,7 +365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -373,7 +375,7 @@
 				INFOPLIST_FILE = CaTinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CaTinder/Bridge-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = CaTinder/FBBridge.h;
 			};
 			name = Debug;
 		};
@@ -381,7 +383,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -391,7 +393,7 @@
 				INFOPLIST_FILE = CaTinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CaTinder/Bridge-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = CaTinder/FBBridge.h;
 			};
 			name = Release;
 		};

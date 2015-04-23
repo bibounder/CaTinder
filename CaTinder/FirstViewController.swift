@@ -1,47 +1,48 @@
-//
-//  FirstViewController.swift
-//  CaTinder
-//
-//  Created by tom paolini on 22/04/15.
-//  Copyright (c) 2015 tom paolini. All rights reserved.
-//
-
 import UIKit
 
-class FirstViewController: UIViewController, FBLoginViewDelegate {
-
-    @IBOutlet var fbLoginView : FBLoginView!
-    
+class FirstViewController: UIViewController, FBSDKLoginButtonDelegate {
+    @IBOutlet var loginButton: FBSDKLoginButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.fbLoginView.delegate = self
-        self.fbLoginView.readPermissions = ["public_profile", "email", "user_friends"]
-
+        
+        // TODO check if we already have a token
+        if (FBSDKAccessToken.currentAccessToken() != nil)
+        {
+            // User is already logged in, do work such as go to next view controller.
+        }
+        else
+        {
+            loginButton.center = self.view.center
+            loginButton.readPermissions = ["public_profile", "email", "user_friends"]
+            loginButton.delegate = self
+        }
     }
     
-    func loginViewShowingLoggedInUser(loginView : FBLoginView!) {
-        println("User Logged In")
-        println("This is where you perform a segue.")
+    func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
+        if (error != nil) {
+            // Process error
+        }
+        else if result.isCancelled {
+            // Handle cancellations
+        }
+        else {
+            // If you ask for multiple permissions at once, you
+            // should check if specific permissions missing
+            if result.grantedPermissions.contains("email") {
+                let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: nil)
+                graphRequest.startWithCompletionHandler({ (connection, result, error) -> Void in
+                    if (error != nil) {
+                        let alert = UIAlertController(title: "Erreur", message: "Erreur de connexion vers Facebook", preferredStyle: UIAlertControllerStyle.Alert)
+                        self.presentViewController(alert, animated: true, completion: nil)
+                    } else {
+                        //var email = result.valueForKey("email") as! NSString
+                        //NSLog("%@", email)
+                    }
+                })
+            }
+        }
     }
     
-    func loginViewFetchedUserInfo(loginView : FBLoginView!, user: FBGraphUser){
-        println("User Name: \(user.name)")
+    func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
     }
-    
-    func loginViewShowingLoggedOutUser(loginView : FBLoginView!) {
-        println("User Logged Out")
-    }
-    
-    func loginView(loginView : FBLoginView!, handleError:NSError) {
-        println("Error: \(handleError.localizedDescription)")
-    }
-
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
-

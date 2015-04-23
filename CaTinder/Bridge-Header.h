@@ -9,7 +9,4 @@
 #ifndef CaTinder_Bridge_Header_h
 #define CaTinder_Bridge_Header_h
 
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
-#import <FBSDKLoginKit/FBSDKLoginKit.h>
-
 #endif
