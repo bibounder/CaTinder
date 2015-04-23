@@ -332,35 +332,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3679422-pinned-polaroid-film-on-white-background" translatesAutoresizingMaskIntoConstraints="NO" id="U01-G4-LVR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photoflip" translatesAutoresizingMaskIntoConstraints="NO" id="U01-G4-LVR">
                                 <rect key="frame" x="3" y="28" width="369" height="348"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="GLr-3n-Sb7" appends="YES" id="m7V-n0-8Dh"/>
                                 </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat-exemple" translatesAutoresizingMaskIntoConstraints="NO" id="KTX-5U-c9T">
-                                <rect key="frame" x="77" y="83" width="214" height="205"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="kt5-XB-6Kb" appends="YES" id="i5N-Fa-cRD"/>
-                                    <outletCollection property="gestureRecognizers" destination="wMK-ae-XfB" appends="YES" id="BCm-O9-HUT"/>
-                                </connections>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Catname, " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcD-54-SQD">
-                                <rect key="frame" x="86" y="304" width="70" height="21"/>
+                                <rect key="frame" x="48" y="304" width="70" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AGE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HrK-m8-LgC">
-                                <rect key="frame" x="153" y="304" width="35" height="21"/>
+                                <rect key="frame" x="117" y="304" width="35" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Race" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AI-RC-exc">
-                                <rect key="frame" x="251" y="303" width="40" height="21"/>
+                                <rect key="frame" x="281" y="303" width="40" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.3316169507575758" green="0.3316169507575758" blue="0.3316169507575758" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.47512231691919193" green="0.47512231691919193" blue="0.47512231691919193" alpha="1" colorSpace="calibratedRGB"/>
@@ -404,6 +396,9 @@
                                     <segue destination="YvM-Y5-ex9" kind="showDetail" id="8CK-eR-xRt"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat-exemple" translatesAutoresizingMaskIntoConstraints="NO" id="vlj-34-hU0">
+                                <rect key="frame" x="46" y="65" width="285" height="218"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -452,7 +447,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="3679422-pinned-polaroid-film-on-white-background" width="450" height="450"/>
         <image name="cat-exemple" width="1536" height="1536"/>
         <image name="circle2" width="208" height="203"/>
         <image name="connexion-normal" width="292" height="48"/>
@@ -463,6 +457,7 @@
         <image name="like" width="256" height="256"/>
         <image name="line-2-256" width="256" height="256"/>
         <image name="logocatinder" width="175" height="253"/>
+        <image name="photoflip" width="710" height="696"/>
         <image name="second" width="30" height="30"/>
         <image name="twitter-co" width="594" height="76"/>
         <image name="unlike" width="256" height="256"/>
