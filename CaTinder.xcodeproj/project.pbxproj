@@ -14,12 +14,8 @@
 		A950D03E1AE7938E00710AAE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A950D03C1AE7938E00710AAE /* LaunchScreen.xib */; };
 		A950D04A1AE7938F00710AAE /* CaTinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A950D0491AE7938F00710AAE /* CaTinderTests.swift */; };
 		A950D0531AE7C2D300710AAE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A950D03A1AE7938E00710AAE /* Images.xcassets */; };
-		A97EFCB71AE8E40D0030582C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97EFCB11AE8E40D0030582C /* Bolts.framework */; };
-		A97EFCB81AE8E40D0030582C /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97EFCB21AE8E40D0030582C /* FBAudienceNetwork.framework */; };
-		A97EFCB91AE8E40D0030582C /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97EFCB31AE8E40D0030582C /* FBSDKCoreKit.framework */; };
-		A97EFCBA1AE8E40D0030582C /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97EFCB41AE8E40D0030582C /* FBSDKLoginKit.framework */; };
-		A97EFCBB1AE8E40D0030582C /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97EFCB51AE8E40D0030582C /* FBSDKMessengerShareKit.framework */; };
-		A97EFCBC1AE8E40D0030582C /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97EFCB61AE8E40D0030582C /* FBSDKShareKit.framework */; };
+		A97EFCE91AE8FCB90030582C /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97EFCE81AE8FCB90030582C /* FBSDKCoreKit.framework */; };
+		A97EFCEB1AE8FD170030582C /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97EFCEA1AE8FD170030582C /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,12 +40,9 @@
 		A950D0431AE7938F00710AAE /* CaTinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaTinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A950D0481AE7938F00710AAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A950D0491AE7938F00710AAE /* CaTinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaTinderTests.swift; sourceTree = "<group>"; };
-		A97EFCB11AE8E40D0030582C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		A97EFCB21AE8E40D0030582C /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
-		A97EFCB31AE8E40D0030582C /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		A97EFCB41AE8E40D0030582C /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		A97EFCB51AE8E40D0030582C /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
-		A97EFCB61AE8E40D0030582C /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		A97EFCBF1AE8E9940030582C /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
+		A97EFCE81AE8FCB90030582C /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		A97EFCEA1AE8FD170030582C /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A97EFCB71AE8E40D0030582C /* Bolts.framework in Frameworks */,
-				A97EFCB91AE8E40D0030582C /* FBSDKCoreKit.framework in Frameworks */,
-				A97EFCBC1AE8E40D0030582C /* FBSDKShareKit.framework in Frameworks */,
-				A97EFCBB1AE8E40D0030582C /* FBSDKMessengerShareKit.framework in Frameworks */,
-				A97EFCBA1AE8E40D0030582C /* FBSDKLoginKit.framework in Frameworks */,
-				A97EFCB81AE8E40D0030582C /* FBAudienceNetwork.framework in Frameworks */,
+				A97EFCEB1AE8FD170030582C /* FBSDKLoginKit.framework in Frameworks */,
+				A97EFCE91AE8FCB90030582C /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +68,12 @@
 		A950D0231AE7938E00710AAE = {
 			isa = PBXGroup;
 			children = (
+				A97EFCEA1AE8FD170030582C /* FBSDKLoginKit.framework */,
+				A97EFCE81AE8FCB90030582C /* FBSDKCoreKit.framework */,
+				A97EFCCB1AE8F2890030582C /* Frameworks */,
 				A950D02D1AE7938E00710AAE /* Products */,
 				A950D02E1AE7938E00710AAE /* CaTinder */,
 				A950D0461AE7938F00710AAE /* CaTinderTests */,
-				A97EFCB01AE8E3C80030582C /* Framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +91,7 @@
 			children = (
 				A950D0311AE7938E00710AAE /* AppDelegate.swift */,
 				A950D0331AE7938E00710AAE /* FirstViewController.swift */,
+				A97EFCBF1AE8E9940030582C /* Bridge-Header.h */,
 				A950D0351AE7938E00710AAE /* SecondViewController.swift */,
 				A950D0371AE7938E00710AAE /* Main.storyboard */,
 				A950D03A1AE7938E00710AAE /* Images.xcassets */,
@@ -134,17 +126,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A97EFCB01AE8E3C80030582C /* Framework */ = {
+		A97EFCCB1AE8F2890030582C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A97EFCB11AE8E40D0030582C /* Bolts.framework */,
-				A97EFCB21AE8E40D0030582C /* FBAudienceNetwork.framework */,
-				A97EFCB31AE8E40D0030582C /* FBSDKCoreKit.framework */,
-				A97EFCB41AE8E40D0030582C /* FBSDKLoginKit.framework */,
-				A97EFCB51AE8E40D0030582C /* FBSDKMessengerShareKit.framework */,
-				A97EFCB61AE8E40D0030582C /* FBSDKShareKit.framework */,
 			);
-			name = Framework;
+			name = Frameworks;
+			path = CaTinderTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,13 +363,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/CaTinderTests",
+					/Users/bibounder/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = CaTinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CaTinder/Bridge-Header.h";
 			};
 			name = Debug;
 		};
@@ -390,13 +381,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/CaTinderTests",
+					/Users/bibounder/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = CaTinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CaTinder/Bridge-Header.h";
 			};
 			name = Release;
 		};
