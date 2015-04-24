@@ -4,4 +4,6 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 
+#import "SWRevealViewController.h"
+
 #endif
