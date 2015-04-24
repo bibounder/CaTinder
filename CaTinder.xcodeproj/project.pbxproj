@@ -15,7 +15,7 @@
 		A950D04A1AE7938F00710AAE /* CaTinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A950D0491AE7938F00710AAE /* CaTinderTests.swift */; };
 		A950D0531AE7C2D300710AAE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A950D03A1AE7938E00710AAE /* Images.xcassets */; };
 		A97EFCE91AE8FCB90030582C /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97EFCE81AE8FCB90030582C /* FBSDKCoreKit.framework */; };
-		A97EFCEB1AE8FD170030582C /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97EFCEA1AE8FD170030582C /* FBSDKLoginKit.framework */; };
+		A97EFCF11AE91D0F0030582C /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97EFCF01AE91D0F0030582C /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +41,8 @@
 		A950D0481AE7938F00710AAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A950D0491AE7938F00710AAE /* CaTinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaTinderTests.swift; sourceTree = "<group>"; };
 		A97EFCE81AE8FCB90030582C /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		A97EFCEA1AE8FD170030582C /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		A97EFCED1AE909480030582C /* FBBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBBridge.h; sourceTree = "<group>"; };
+		A97EFCF01AE91D0F0030582C /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,8 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A97EFCEB1AE8FD170030582C /* FBSDKLoginKit.framework in Frameworks */,
 				A97EFCE91AE8FCB90030582C /* FBSDKCoreKit.framework in Frameworks */,
+				A97EFCF11AE91D0F0030582C /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,9 +68,8 @@
 		A950D0231AE7938E00710AAE = {
 			isa = PBXGroup;
 			children = (
-				A97EFCEA1AE8FD170030582C /* FBSDKLoginKit.framework */,
+				A97EFCF01AE91D0F0030582C /* FBSDKLoginKit.framework */,
 				A97EFCE81AE8FCB90030582C /* FBSDKCoreKit.framework */,
-				A97EFCCB1AE8F2890030582C /* Frameworks */,
 				A950D02D1AE7938E00710AAE /* Products */,
 				A950D02E1AE7938E00710AAE /* CaTinder */,
 				A950D0461AE7938F00710AAE /* CaTinderTests */,
@@ -89,11 +88,11 @@
 		A950D02E1AE7938E00710AAE /* CaTinder */ = {
 			isa = PBXGroup;
 			children = (
+				A950D0371AE7938E00710AAE /* Main.storyboard */,
 				A97EFCED1AE909480030582C /* FBBridge.h */,
 				A950D0311AE7938E00710AAE /* AppDelegate.swift */,
 				A950D0331AE7938E00710AAE /* FirstViewController.swift */,
 				A950D0351AE7938E00710AAE /* SecondViewController.swift */,
-				A950D0371AE7938E00710AAE /* Main.storyboard */,
 				A950D03A1AE7938E00710AAE /* Images.xcassets */,
 				A950D03C1AE7938E00710AAE /* LaunchScreen.xib */,
 				A950D02F1AE7938E00710AAE /* Supporting Files */,
@@ -124,14 +123,6 @@
 				A950D0481AE7938F00710AAE /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A97EFCCB1AE8F2890030582C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			path = CaTinderTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
