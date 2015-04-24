@@ -310,6 +310,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="16" y="190" width="344" height="29"/>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="190" width="344" height="29"/>
+                                </variation>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0Ge-5x-dAR">
                                 <rect key="frame" x="16" y="277" width="343" height="29"/>
@@ -319,6 +322,9 @@
                                 </segments>
                                 <color key="tintColor" red="0.96303104070000001" green="0.99147538010000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="277" width="344" height="29"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="16" y="277" width="344" height="29"/>
                                 </variation>
                             </segmentedControl>
@@ -332,6 +338,9 @@
                                 </segments>
                                 <color key="tintColor" red="0.96303104070000001" green="0.99147538010000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="364" width="344" height="29"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="16" y="364" width="344" height="29"/>
                                 </variation>
                             </segmentedControl>
@@ -469,7 +478,7 @@
                                     <segue destination="YvM-Y5-ex9" kind="presentation" modalTransitionStyle="flipHorizontal" id="8CK-eR-xRt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yV9-zb-72k">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yV9-zb-72k">
                                 <rect key="frame" x="168" y="521" width="40" height="41"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -484,7 +493,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat-exemple" translatesAutoresizingMaskIntoConstraints="NO" id="vlj-34-hU0">
                                 <rect key="frame" x="46" y="95" width="285" height="218"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menu" translatesAutoresizingMaskIntoConstraints="NO" id="Bdk-b1-fll">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menu.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bdk-b1-fll">
                                 <rect key="frame" x="16" y="32" width="29" height="29"/>
                             </imageView>
                         </subviews>
@@ -599,9 +608,6 @@
                                 <color key="textColor" red="0.23038983590000001" green="0.23038983590000001" blue="0.23038983590000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="male" translatesAutoresizingMaskIntoConstraints="NO" id="Upw-5K-prQ">
-                                <rect key="frame" x="335" y="24" width="32" height="32"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.97449906230758476" green="0.97565162302873176" blue="0.98052584670231724" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -696,7 +702,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oly-z7-y9T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3261" y="477"/>
+            <point key="canvasLocation" x="3201" y="493"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="LEk-2x-Ekm">
@@ -866,18 +872,7 @@
                     <view key="view" contentMode="scaleToFill" id="n2G-xv-NPz">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="japanvillage" translatesAutoresizingMaskIntoConstraints="NO" id="45I-Wr-dZy">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="45I-Wr-dZy" secondAttribute="trailing" id="2dY-TQ-1QF"/>
-                            <constraint firstItem="45I-Wr-dZy" firstAttribute="leading" secondItem="n2G-xv-NPz" secondAttribute="leading" id="4Zi-Jj-CVB"/>
-                            <constraint firstItem="45I-Wr-dZy" firstAttribute="bottom" secondItem="aKb-7D-Huz" secondAttribute="top" id="KrJ-wP-CpS"/>
-                            <constraint firstItem="45I-Wr-dZy" firstAttribute="top" secondItem="n2G-xv-NPz" secondAttribute="top" id="YiV-zR-qN8"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Paramètres" id="aww-Pf-03p">
                         <barButtonItem key="leftBarButtonItem" image="menu.png" id="IyU-hF-whQ">
@@ -918,22 +913,19 @@
         <image name="envoyer-normal" width="307" height="52"/>
         <image name="home.png" width="64" height="64"/>
         <image name="info" width="128" height="128"/>
-        <image name="japanvillage" width="1800" height="1350"/>
         <image name="lesamisdepepito" width="284" height="76"/>
         <image name="like" width="256" height="256"/>
         <image name="line-2-256" width="256" height="256"/>
         <image name="logocatinder" width="175" height="253"/>
-        <image name="male" width="500" height="500"/>
-        <image name="menu" width="256" height="256"/>
-        <image name="menu.png" width="50" height="50"/>
+        <image name="menu.png" width="34" height="34"/>
         <image name="photoflip" width="710" height="696"/>
-        <image name="profile.png" width="64" height="64"/>
+        <image name="profile.png" width="512" height="512"/>
         <image name="second" width="30" height="30"/>
-        <image name="setting.png" width="64" height="64"/>
+        <image name="setting.png" width="512" height="512"/>
         <image name="unlike" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="USG-aS-OCe"/>
         <segue reference="ICd-GF-au1"/>
+        <segue reference="dQL-P7-3zF"/>
     </inferredMetricsTieBreakers>
 </document>
