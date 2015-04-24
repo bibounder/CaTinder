@@ -20,6 +20,9 @@
 		A933EDCF1AEA7A2E00A70FA2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933EDCB1AEA7A2E00A70FA2 /* ProfileViewController.swift */; };
 		A933EDD11AEA7A3500A70FA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933EDD01AEA7A3500A70FA2 /* ViewController.swift */; };
 		A933EDD61AEA7A6400A70FA2 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A933EDD51AEA7A6400A70FA2 /* SWRevealViewController.m */; };
+		A933EDE11AEA88A800A70FA2 /* GGDraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933EDDE1AEA88A800A70FA2 /* GGDraggableView.swift */; };
+		A933EDE21AEA88A800A70FA2 /* GGOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933EDDF1AEA88A800A70FA2 /* GGOverlayView.swift */; };
+		A933EDE31AEA88A800A70FA2 /* GGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933EDE01AEA88A800A70FA2 /* GGView.swift */; };
 		A950D0321AE7938E00710AAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A950D0311AE7938E00710AAE /* AppDelegate.swift */; };
 		A950D0341AE7938E00710AAE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A950D0331AE7938E00710AAE /* FirstViewController.swift */; };
 		A950D0361AE7938E00710AAE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A950D0351AE7938E00710AAE /* SecondViewController.swift */; };
@@ -57,6 +60,9 @@
 		A933EDD41AEA7A6400A70FA2 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = ../Hama/Archive/SidebarMenu/SWRevealViewController.h; sourceTree = "<group>"; };
 		A933EDD51AEA7A6400A70FA2 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = ../Hama/Archive/SidebarMenu/SWRevealViewController.m; sourceTree = "<group>"; };
 		A933EDD71AEA7B5800A70FA2 /* FBBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBBridge.h; sourceTree = "<group>"; };
+		A933EDDE1AEA88A800A70FA2 /* GGDraggableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGDraggableView.swift; path = ../../../GG/GGDraggableView.swift; sourceTree = "<group>"; };
+		A933EDDF1AEA88A800A70FA2 /* GGOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGOverlayView.swift; path = ../../../GG/GGOverlayView.swift; sourceTree = "<group>"; };
+		A933EDE01AEA88A800A70FA2 /* GGView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGView.swift; path = ../../../GG/GGView.swift; sourceTree = "<group>"; };
 		A950D02C1AE7938E00710AAE /* CaTinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaTinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A950D0301AE7938E00710AAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A950D0311AE7938E00710AAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +101,9 @@
 		A933ED9E1AEA6F1D00A70FA2 /* SidebarMenu */ = {
 			isa = PBXGroup;
 			children = (
+				A933EDDE1AEA88A800A70FA2 /* GGDraggableView.swift */,
+				A933EDDF1AEA88A800A70FA2 /* GGOverlayView.swift */,
+				A933EDE01AEA88A800A70FA2 /* GGView.swift */,
 				A933EDD01AEA7A3500A70FA2 /* ViewController.swift */,
 				A933EDC81AEA7A2E00A70FA2 /* HomeViewController.swift */,
 				A933EDC91AEA7A2E00A70FA2 /* MenuController.swift */,
@@ -289,9 +298,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A933EDE31AEA88A800A70FA2 /* GGView.swift in Sources */,
+				A933EDE11AEA88A800A70FA2 /* GGDraggableView.swift in Sources */,
 				A933EDCD1AEA7A2E00A70FA2 /* MenuController.swift in Sources */,
 				A950D0361AE7938E00710AAE /* SecondViewController.swift in Sources */,
 				A950D0321AE7938E00710AAE /* AppDelegate.swift in Sources */,
+				A933EDE21AEA88A800A70FA2 /* GGOverlayView.swift in Sources */,
 				A950D0341AE7938E00710AAE /* FirstViewController.swift in Sources */,
 				A933EDCF1AEA7A2E00A70FA2 /* ProfileViewController.swift in Sources */,
 				A933EDD61AEA7A6400A70FA2 /* SWRevealViewController.m in Sources */,
