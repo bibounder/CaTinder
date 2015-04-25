@@ -19,8 +19,8 @@ class DraggableViewBackground : UIView {
     //avoid performance and memory costs
     
     let MAX_BUFFER_SIZE = 9 //%%% max number of cards loaded at any given time, must be greater than 1
-    let CARD_HEIGHT : CGFloat = 240  //%%% height of the draggable card
-    let CARD_WIDTH : CGFloat = 240 //%%% width of the draggable card
+    let CARD_HEIGHT : CGFloat = 310  //%%% height of the draggable card
+    let CARD_WIDTH : CGFloat = 310 //%%% width of the draggable card
     
     var cardsLoadedIndex : Int = 0 //%%% the index of the card you have loaded into the loadedCards array last
     var loadedCards = [DraggableView]() //%%% the array of card loaded (change max_buffer_size to increase or decrease the number of cards this holds)
@@ -59,14 +59,14 @@ class DraggableViewBackground : UIView {
         //messageButton.setImage(UIImage(named: "messageButton"), forState: UIControlState.Normal)
         
         //  Styling xButton
-        xButton = UIButton(frame: CGRectMake(85, 385, 90, 90))
+        xButton = UIButton(frame: CGRectMake(40, 485, 130, 130))
         xButton.setImage(UIImage(named: "xButton"), forState: UIControlState.Normal)
         
         //  Add target for checkButton (Swipe Left)
         xButton.addTarget(self, action: "swipeLeft", forControlEvents: UIControlEvents.TouchUpInside)
         
         //  Styling checkButton
-        checkButton = UIButton(frame: CGRectMake(225, 385, 90, 90))
+        checkButton = UIButton(frame: CGRectMake(200, 485, 130, 130))
         checkButton.setImage(UIImage(named: "checkButton"), forState: UIControlState.Normal)
         
         //  Add target for checkButton (Swipe Right)

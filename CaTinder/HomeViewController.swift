@@ -19,6 +19,8 @@ class HomeViewController: UIViewController {
             menuButton.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+        var draggableBackground = DraggableViewBackground(frame: self.view.frame)
+        self.view.addSubview(draggableBackground)
         
     }
     

@@ -44,7 +44,7 @@ class DraggableView : UIView {
         
         super.init(frame: frame)
         
-        information = UILabel(frame: CGRectMake(0, 190, self.frame.size.width, 50))
+        information = UILabel(frame: CGRectMake(0, 260, self.frame.size.width, 50))
         information.text = "no info given"
         information.textAlignment = NSTextAlignment.Center
         information.textColor = UIColor.blackColor()
