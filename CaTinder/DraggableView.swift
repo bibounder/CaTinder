@@ -50,7 +50,7 @@ class DraggableView : UIView {
         information.textColor = UIColor.blackColor()
         information.backgroundColor = UIColor(red:255/255, green:255/255,blue:255/255,alpha:0.5)
         
-        self.backgroundColor = UIColor(red:72/255, green:145/255,blue:206/255,alpha:1)
+        self.backgroundColor = UIColor(patternImage: UIImage(named: "cat-exemple")!)
         
         
         panGestureRecognizer = UIPanGestureRecognizer(target: self, action: "beingDragged:")
@@ -58,7 +58,7 @@ class DraggableView : UIView {
         self.addGestureRecognizer(panGestureRecognizer)
         self.addSubview(information)
         
-        overlayView = OverlayView(frame: CGRectMake(0, 0, 240, 240))
+        overlayView = OverlayView(frame: CGRectMake(0, 0, 310, 310))
         overlayView.alpha = 0
         self.addSubview(overlayView)
         

@@ -69,7 +69,7 @@ class OverlayView : UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        imageView.frame = CGRectMake(70, 70, 100, 100)
+        imageView.frame = CGRectMake(80, 80, 150, 150)
         //imageView.backgroundColor = UIColor(red:72/255, green:145/255,blue:206/255,alpha:1)
     }
 }
