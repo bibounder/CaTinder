@@ -11,7 +11,7 @@ import UIKit
 
 let ACTION_MARGIN = 120 //%%% distance from center where the action applies. Higher = swipe further in order for the action to be called
 let SCALE_STRENGTH = 4 //%%% how quickly the card shrinks. Higher = slower shrinking
-let SCALE_MAX : CGFloat = 0.93 //%%% upper bar for how much the card shrinks. Higher = shrinks less
+let SCALE_MAX : CGFloat = 1 //%%% upper bar for how much the card shrinks. Higher = shrinks less
 let ROTATION_MAX = 1 //%%% the maximum rotation allowed in radians.  Higher = card can keep rotating longer
 let ROTATION_STRENGTH = 320 //%%% strength of rotation. Higher = weaker rotation
 let ROTATION_ANGLE = M_PI/8 //%%% Higher = stronger rotation angle
@@ -44,10 +44,11 @@ class DraggableView : UIView {
         
         super.init(frame: frame)
         
-        information = UILabel(frame: CGRectMake(0, 50, self.frame.size.width, 100))
+        information = UILabel(frame: CGRectMake(0, 190, self.frame.size.width, 50))
         information.text = "no info given"
         information.textAlignment = NSTextAlignment.Center
         information.textColor = UIColor.blackColor()
+        information.backgroundColor = UIColor(red:255/255, green:255/255,blue:255/255,alpha:0.5)
         
         self.backgroundColor = UIColor(red:72/255, green:145/255,blue:206/255,alpha:1)
         
@@ -57,7 +58,7 @@ class DraggableView : UIView {
         self.addGestureRecognizer(panGestureRecognizer)
         self.addSubview(information)
         
-        overlayView = OverlayView(frame: CGRectMake(self.frame.size.width/2-100, 0, 100, 100))
+        overlayView = OverlayView(frame: CGRectMake(0, 0, 240, 240))
         overlayView.alpha = 0
         self.addSubview(overlayView)
         
@@ -112,6 +113,7 @@ class DraggableView : UIView {
             
             //%%% apply transformations
             self.transform = scaleTransform
+            
             self.updateOverlay(xFromCenter)
             
             break
@@ -131,12 +133,16 @@ class DraggableView : UIView {
     func updateOverlay(distance: CGFloat){
         
         if (distance > 0) {
-            overlayView.mode = GGOverlayViewMode.GGOverlayViewModeRight;
-        } else {
             overlayView.mode = GGOverlayViewMode.GGOverlayViewModeLeft;
+            overlayView.alpha = min(CGFloat(distance)/(100), 0.4);
+            overlayView.setMode(GGOverlayViewMode.GGOverlayViewModeRight);
         }
-        
-        overlayView.alpha = min(CGFloat(distance)/100, 0.4);
+        else if (distance < 0) {
+            overlayView.mode = GGOverlayViewMode.GGOverlayViewModeRight;
+            overlayView.alpha = min(CGFloat(distance)/(-100), 0.4);
+            overlayView.setMode(GGOverlayViewMode.GGOverlayViewModeLeft);
+        }
+
     }
     //%%% called when the card is let go
     func afterSwipeAction() {
@@ -144,7 +150,7 @@ class DraggableView : UIView {
         {
             self.rightAction()
         }
-        else if(xFromCenter < CGFloat(-ACTION_MARGIN))
+        else if(xFromCenter < CGFloat(-(ACTION_MARGIN)))
         {
             self.leftAction()
         }
@@ -193,8 +199,8 @@ class DraggableView : UIView {
             }) { (complete) -> Void in
                 self.removeFromSuperview()
         }
-        
-        println("YES")
+        overlayView.setMode(GGOverlayViewMode.GGOverlayViewModeRight)
+        println("Yes")
         
     }
     
@@ -207,7 +213,7 @@ class DraggableView : UIView {
             }) { (complete) -> Void in
                 self.removeFromSuperview()
         }
-        
+        overlayView.setMode(GGOverlayViewMode.GGOverlayViewModeLeft)
         println("No")
         
     }

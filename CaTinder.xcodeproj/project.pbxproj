@@ -34,6 +34,10 @@
 		A950D04A1AE7938F00710AAE /* CaTinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A950D0491AE7938F00710AAE /* CaTinderTests.swift */; };
 		A97EFCE91AE8FCB90030582C /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97EFCE81AE8FCB90030582C /* FBSDKCoreKit.framework */; };
 		A97EFCF11AE91D0F0030582C /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97EFCF01AE91D0F0030582C /* FBSDKLoginKit.framework */; };
+		A9FD6F0D1AEBB6BD00AA6485 /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD6F091AEBB6BD00AA6485 /* DraggableView.swift */; };
+		A9FD6F0E1AEBB6BD00AA6485 /* DraggableViewBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD6F0A1AEBB6BD00AA6485 /* DraggableViewBackground.swift */; };
+		A9FD6F0F1AEBB6BD00AA6485 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD6F0B1AEBB6BD00AA6485 /* OverlayView.swift */; };
+		A9FD6F101AEBB6BD00AA6485 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD6F0C1AEBB6BD00AA6485 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +83,10 @@
 		A950D0491AE7938F00710AAE /* CaTinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaTinderTests.swift; sourceTree = "<group>"; };
 		A97EFCE81AE8FCB90030582C /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		A97EFCF01AE91D0F0030582C /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		A9FD6F091AEBB6BD00AA6485 /* DraggableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
+		A9FD6F0A1AEBB6BD00AA6485 /* DraggableViewBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableViewBackground.swift; sourceTree = "<group>"; };
+		A9FD6F0B1AEBB6BD00AA6485 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		A9FD6F0C1AEBB6BD00AA6485 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +169,10 @@
 		A950D02E1AE7938E00710AAE /* CaTinder */ = {
 			isa = PBXGroup;
 			children = (
+				A9FD6F091AEBB6BD00AA6485 /* DraggableView.swift */,
+				A9FD6F0A1AEBB6BD00AA6485 /* DraggableViewBackground.swift */,
+				A9FD6F0B1AEBB6BD00AA6485 /* OverlayView.swift */,
+				A9FD6F0C1AEBB6BD00AA6485 /* ViewController.swift */,
 				A950D03C1AE7938E00710AAE /* LaunchScreen.xib */,
 				A950D0371AE7938E00710AAE /* Main.storyboard */,
 				A933EE5E1AEAB22000A70FA2 /* AppDelegate.swift */,
@@ -306,13 +318,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9FD6F0E1AEBB6BD00AA6485 /* DraggableViewBackground.swift in Sources */,
+				A9FD6F0D1AEBB6BD00AA6485 /* DraggableView.swift in Sources */,
 				A933EE741AEAB39900A70FA2 /* GGView.swift in Sources */,
 				A933EE621AEAB22000A70FA2 /* AppDelegate.swift in Sources */,
+				A9FD6F101AEBB6BD00AA6485 /* ViewController.swift in Sources */,
 				A933EE731AEAB39900A70FA2 /* GGOverlayView.swift in Sources */,
 				A933EE721AEAB39900A70FA2 /* GGDraggableView.swift in Sources */,
 				A933EE641AEAB22000A70FA2 /* SecondViewController.swift in Sources */,
 				A933EE631AEAB22000A70FA2 /* FirstViewController.swift in Sources */,
 				A933EE7D1AEAB3E900A70FA2 /* SWRevealViewController.m in Sources */,
+				A9FD6F0F1AEBB6BD00AA6485 /* OverlayView.swift in Sources */,
 				A933EE521AEAB12600A70FA2 /* PhotoViewController.swift in Sources */,
 				A933EE511AEAB12600A70FA2 /* HomeViewController.swift in Sources */,
 				A933EE531AEAB12600A70FA2 /* ProfileViewController.swift in Sources */,

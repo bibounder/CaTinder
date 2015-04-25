@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9pv-A4-QxB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4Zt-3c-yOW">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -886,27 +886,10 @@
             </objects>
             <point key="canvasLocation" x="3960" y="492.75"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="MBc-ae-lA1">
-            <objects>
-                <viewController id="LEP-BL-ABx" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="OKj-ml-AxJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="oPR-c6-g6l"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="EXH-uV-7fp">
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8GE-5h-hQt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3201" y="-178.5"/>
-        </scene>
-        <!--Menu Controller-->
+        <!--Table View Controller-->
         <scene sceneID="ff3-1T-ifu">
             <objects>
-                <tableViewController id="cjV-vQ-OoT" customClass="MenuController" customModule="CaTinder" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="cjV-vQ-OoT" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="pwz-aE-JPp">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1016,12 +999,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="hJQ-RZ-hYN" kind="relationship" relationship="rootViewController" id="w9v-Uu-P28"/>
+                        <segue destination="hJQ-RZ-hYN" kind="relationship" relationship="rootViewController" id="qD5-d0-sDR"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ui-qZ-qna" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2448" y="490.5"/>
+            <point key="canvasLocation" x="2397" y="406.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1i9-ND-xFo">
@@ -1620,6 +1603,26 @@
             </objects>
             <point key="canvasLocation" x="3201" y="493"/>
         </scene>
+        <!--Swipe View Controller-->
+        <scene sceneID="hhK-J3-Ah0">
+            <objects>
+                <viewController id="4Zt-3c-yOW" customClass="SwipeViewController" customModule="CaTinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IPo-5C-q5G"/>
+                        <viewControllerLayoutGuide type="bottom" id="glM-5n-uGe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XCa-bG-8PS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2gQ-Kr-Qdf"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jjk-zo-Iff" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3201" y="-169.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bleubutton" width="512" height="100"/>
@@ -1642,6 +1645,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="8JU-vA-Ote"/>
-        <segue reference="Me3-qS-NnO"/>
+        <segue reference="ICd-GF-au1"/>
     </inferredMetricsTieBreakers>
 </document>

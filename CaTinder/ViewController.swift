@@ -1,15 +1,15 @@
 //
 //  ViewController.swift
-//  SidebarMenu
+//  testing swiping
 //
 //  Created by Mohamed Mahmoud HAMA on 24/04/15.
-//  Copyright (c) 2015 AppCoda. All rights reserved.
+//  Copyright (c) 2015 Richard Kim. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-class ViewController : UIViewController {
+class SwipeViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

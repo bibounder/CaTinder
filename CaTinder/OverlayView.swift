@@ -13,35 +13,53 @@ enum GGOverlayViewMode : Int {
     case GGOverlayViewModeLeft
     case GGOverlayViewModeRight
 }
+extension NSCoder {
+    class func empty() -> NSCoder {
+        let data = NSMutableData()
+        let archiver = NSKeyedArchiver(forWritingWithMutableData: data)
+        archiver.finishEncoding()
+        return NSKeyedUnarchiver(forReadingWithData: data)
+    }
+}
 
 class OverlayView : UIView {
-    var mode : GGOverlayViewMode
+    var mode : GGOverlayViewMode = GGOverlayViewMode.GGOverlayViewModeLeft;
     var imageView : UIImageView
     
     
     override init(frame: CGRect) {
-        mode = GGOverlayViewMode.GGOverlayViewModeRight // tmp init
+        //mode = GGOverlayViewMode.GGOverlayViewModeLeft // tmp init
         imageView = UIImageView()
         super.init(frame: frame)
         
         self.backgroundColor = UIColor.whiteColor()
-        imageView = UIImageView(image: UIImage(named: "noButton"))
+//        if(mode == GGOverlayViewMode.GGOverlayViewModeLeft) {
+//            imageView.image = UIImage(named: "noButton")
+//            print("YOYOYO")
+//        }
+        if(mode == GGOverlayViewMode.GGOverlayViewModeRight) {
+            imageView.image = UIImage(named: "yesButton")
+        }
+        else {
+            imageView.image = UIImage(named: "noButton")
+            //print("YOYOYO")
+        }
         self.addSubview(imageView)
     }
     
-    required init(coder aDecoder: (NSCoder!)) {
-        mode = GGOverlayViewMode.GGOverlayViewModeRight // tmp init
+    required init(coder: NSCoder) {
+        mode = GGOverlayViewMode.GGOverlayViewModeLeft // tmp init
         imageView = UIImageView()
-        super.init(coder: aDecoder) //ajout de coder: aDecoder
+        super.init(coder: NSCoder.empty()) //coder) //XXXXUXXXXXXXXXX
     }
     
     func setMode(mode: GGOverlayViewMode){
-        //      if (_ mode == mode) {
-        //            return
-        //        }
-        //
-        //        _mode = mode;
-        
+//        //      if (_ mode == mode) {
+//        //            return
+//        //        }
+//        //
+//        //        _mode = mode;
+//        
         if(mode == GGOverlayViewMode.GGOverlayViewModeLeft) {
             imageView.image = UIImage(named: "noButton")
         } else {
@@ -51,7 +69,7 @@ class OverlayView : UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        imageView.frame = CGRectMake(50, 50, 100, 100)
-        imageView.backgroundColor = UIColor(red:72/255, green:145/255,blue:206/255,alpha:1)
+        imageView.frame = CGRectMake(70, 70, 100, 100)
+        //imageView.backgroundColor = UIColor(red:72/255, green:145/255,blue:206/255,alpha:1)
     }
 }
