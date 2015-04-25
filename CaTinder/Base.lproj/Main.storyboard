@@ -1245,26 +1245,6 @@
             </objects>
             <point key="canvasLocation" x="2448" y="1962"/>
         </scene>
-        <!--Swipe View Controller-->
-        <scene sceneID="hhK-J3-Ah0">
-            <objects>
-                <viewController id="4Zt-3c-yOW" customClass="SwipeViewController" customModule="CaTinder" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="IPo-5C-q5G"/>
-                        <viewControllerLayoutGuide type="bottom" id="glM-5n-uGe"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="XCa-bG-8PS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="2gQ-Kr-Qdf"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jjk-zo-Iff" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3201" y="-169.5"/>
-        </scene>
     </scenes>
     <resources>
         <image name="bleubutton" width="512" height="100"/>
