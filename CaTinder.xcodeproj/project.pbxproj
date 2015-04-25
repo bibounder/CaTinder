@@ -10,13 +10,9 @@
 		A933EE221AEAAE7100A70FA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A933EE211AEAAE7100A70FA2 /* Foundation.framework */; };
 		A933EE241AEAAE7700A70FA2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A933EE231AEAAE7700A70FA2 /* CoreGraphics.framework */; };
 		A933EE261AEAAE7D00A70FA2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A933EE251AEAAE7D00A70FA2 /* UIKit.framework */; };
-		A933EE361AEAAFEE00A70FA2 /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933EE331AEAAFEE00A70FA2 /* DraggableView.swift */; };
-		A933EE371AEAAFEE00A70FA2 /* DraggableViewBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933EE341AEAAFEE00A70FA2 /* DraggableViewBackground.swift */; };
-		A933EE381AEAAFEE00A70FA2 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933EE351AEAAFEE00A70FA2 /* OverlayView.swift */; };
 		A933EE511AEAB12600A70FA2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933EE4D1AEAB12600A70FA2 /* HomeViewController.swift */; };
 		A933EE521AEAB12600A70FA2 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933EE4E1AEAB12600A70FA2 /* PhotoViewController.swift */; };
 		A933EE531AEAB12600A70FA2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933EE4F1AEAB12600A70FA2 /* ProfileViewController.swift */; };
-		A933EE541AEAB12600A70FA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933EE501AEAB12600A70FA2 /* ViewController.swift */; };
 		A933EE5C1AEAB1B000A70FA2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A933EE581AEAB1B000A70FA2 /* Images.xcassets */; };
 		A933EE621AEAB22000A70FA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933EE5E1AEAB22000A70FA2 /* AppDelegate.swift */; };
 		A933EE631AEAB22000A70FA2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933EE601AEAB22000A70FA2 /* FirstViewController.swift */; };
@@ -54,13 +50,9 @@
 		A933EE211AEAAE7100A70FA2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A933EE231AEAAE7700A70FA2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A933EE251AEAAE7D00A70FA2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		A933EE331AEAAFEE00A70FA2 /* DraggableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DraggableView.swift; path = CaTinder/DraggableView.swift; sourceTree = "<group>"; };
-		A933EE341AEAAFEE00A70FA2 /* DraggableViewBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DraggableViewBackground.swift; path = CaTinder/DraggableViewBackground.swift; sourceTree = "<group>"; };
-		A933EE351AEAAFEE00A70FA2 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OverlayView.swift; path = CaTinder/OverlayView.swift; sourceTree = "<group>"; };
 		A933EE4D1AEAB12600A70FA2 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = CaTinder/HomeViewController.swift; sourceTree = "<group>"; };
 		A933EE4E1AEAB12600A70FA2 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoViewController.swift; path = CaTinder/PhotoViewController.swift; sourceTree = "<group>"; };
 		A933EE4F1AEAB12600A70FA2 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = CaTinder/ProfileViewController.swift; sourceTree = "<group>"; };
-		A933EE501AEAB12600A70FA2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = CaTinder/ViewController.swift; sourceTree = "<group>"; };
 		A933EE581AEAB1B000A70FA2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A933EE5E1AEAB22000A70FA2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A933EE5F1AEAB22000A70FA2 /* FBBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBBridge.h; sourceTree = "<group>"; };
@@ -115,13 +107,9 @@
 		A933ED9E1AEA6F1D00A70FA2 /* SidebarMenu */ = {
 			isa = PBXGroup;
 			children = (
-				A933EE331AEAAFEE00A70FA2 /* DraggableView.swift */,
-				A933EE341AEAAFEE00A70FA2 /* DraggableViewBackground.swift */,
-				A933EE351AEAAFEE00A70FA2 /* OverlayView.swift */,
 				A933EE4D1AEAB12600A70FA2 /* HomeViewController.swift */,
 				A933EE4E1AEAB12600A70FA2 /* PhotoViewController.swift */,
 				A933EE4F1AEAB12600A70FA2 /* ProfileViewController.swift */,
-				A933EE501AEAB12600A70FA2 /* ViewController.swift */,
 				A933EE671AEAB39900A70FA2 /* back.png */,
 				A933EE681AEAB39900A70FA2 /* GGDraggableView.swift */,
 				A933EE691AEAB39900A70FA2 /* GGOverlayView.swift */,
@@ -320,18 +308,14 @@
 			files = (
 				A933EE741AEAB39900A70FA2 /* GGView.swift in Sources */,
 				A933EE621AEAB22000A70FA2 /* AppDelegate.swift in Sources */,
-				A933EE541AEAB12600A70FA2 /* ViewController.swift in Sources */,
 				A933EE731AEAB39900A70FA2 /* GGOverlayView.swift in Sources */,
 				A933EE721AEAB39900A70FA2 /* GGDraggableView.swift in Sources */,
 				A933EE641AEAB22000A70FA2 /* SecondViewController.swift in Sources */,
 				A933EE631AEAB22000A70FA2 /* FirstViewController.swift in Sources */,
 				A933EE7D1AEAB3E900A70FA2 /* SWRevealViewController.m in Sources */,
 				A933EE521AEAB12600A70FA2 /* PhotoViewController.swift in Sources */,
-				A933EE371AEAAFEE00A70FA2 /* DraggableViewBackground.swift in Sources */,
 				A933EE511AEAB12600A70FA2 /* HomeViewController.swift in Sources */,
-				A933EE361AEAAFEE00A70FA2 /* DraggableView.swift in Sources */,
 				A933EE531AEAB12600A70FA2 /* ProfileViewController.swift in Sources */,
-				A933EE381AEAAFEE00A70FA2 /* OverlayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
