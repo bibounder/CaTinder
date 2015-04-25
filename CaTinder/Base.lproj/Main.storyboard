@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="N0B-TG-8Zs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gYk-WM-vvA">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -832,22 +832,80 @@
             </objects>
             <point key="canvasLocation" x="3924" y="425.25"/>
         </scene>
-        <!--View Controller-->
+        <!--Send Message Class-->
         <scene sceneID="Tg8-Fe-zbx">
             <objects>
-                <viewController id="Wwo-cD-yol" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qi6-ac-gJB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Wwo-cD-yol" customClass="SendMessageClass" customModule="CaTinder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ijc-Tz-N22"/>
                         <viewControllerLayoutGuide type="bottom" id="7n8-Ms-duR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="doP-D9-29k">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Demande d'adoption de : Nom du chat" borderStyle="bezel" placeholder="Sujet" minimumFontSize="17" background="line-2-256" translatesAutoresizingMaskIntoConstraints="NO" id="EDZ-vs-kSM">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="148" width="342" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="bezel" placeholder="Votre message pour faire une demande d'adoption" minimumFontSize="17" background="line-2-256" translatesAutoresizingMaskIntoConstraints="NO" id="Cqe-lA-T8b">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="186" width="342" height="187"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbB-M6-lSF">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Envoyer" backgroundImage="bleubutton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="381" width="342" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="sendMail:" destination="Wwo-cD-yol" eventType="touchUpInside" id="Xp2-aQ-lAo"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email-b" translatesAutoresizingMaskIntoConstraints="NO" id="Bos-QN-tIg">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="104" y="9" width="166" height="137"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.60784313725490191" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="EDZ-vs-kSM"/>
+                                <exclude reference="Cqe-lA-T8b"/>
+                                <exclude reference="LbB-M6-lSF"/>
+                                <exclude reference="Bos-QN-tIg"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="EDZ-vs-kSM"/>
+                                <include reference="Cqe-lA-T8b"/>
+                                <include reference="LbB-M6-lSF"/>
+                                <include reference="Bos-QN-tIg"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="8AH-qi-4B7"/>
+                    <connections>
+                        <outlet property="Subject" destination="EDZ-vs-kSM" id="gCi-5O-To2"/>
+                        <outlet property="body" destination="Cqe-lA-T8b" id="YcZ-F8-4TF"/>
+                        <outlet property="subject" destination="EDZ-vs-kSM" id="BHI-D0-bzU"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qi6-ac-gJB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4867.5" y="425.25"/>
+            <point key="canvasLocation" x="4858.5" y="419.25"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="ff3-1T-ifu">
@@ -1262,12 +1320,138 @@
             </objects>
             <point key="canvasLocation" x="2448" y="1962"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="8bb-p1-U50">
+            <objects>
+                <viewController id="gYk-WM-vvA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fJG-Dx-2Az"/>
+                        <viewControllerLayoutGuide type="bottom" id="rL4-si-Y1b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zGW-Dc-hUh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vous êtes compatibles !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8av-ok-5h7">
+                                <rect key="frame" x="25" y="90" width="270" height="58"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="44"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="52" y="95" width="270" height="58"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vous et &quot;cat&quot; avez indiqué que vous vous compreniez" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Cf-Fr-hDt">
+                                <rect key="frame" x="25" y="126" width="270" height="119"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="52" y="131" width="270" height="119"/>
+                                </variation>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k97-AP-bA6">
+                                <rect key="frame" x="85" y="253" width="150" height="150"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="nwj-7O-TiF">
+                                        <rect key="frame" x="3" y="3" width="144" height="144"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="112" y="258" width="150" height="150"/>
+                                </variation>
+                            </view>
+                            <view tag="99" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hWA-qR-4jY">
+                                <rect key="frame" x="26" y="432" width="269" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Envoyer un email" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdm-Ra-8Ho">
+                                        <rect key="frame" x="98" y="11" width="158" height="21"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="ke9-7H-6Uc">
+                                        <rect key="frame" x="13" y="1" width="36" height="37"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wp0-2g-nXc">
+                                        <rect key="frame" x="0.0" y="0.0" width="269" height="40"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Wwo-cD-yol" kind="presentation" modalTransitionStyle="flipHorizontal" id="PCr-Mp-sWo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="53" y="437" width="269" height="40"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0R1-c2-hOs">
+                                <rect key="frame" x="26" y="480" width="269" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Continuer la recherche" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2GW-4A-UNe">
+                                        <rect key="frame" x="82" y="9" width="174" height="21"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="continue" translatesAutoresizingMaskIntoConstraints="NO" id="TjD-Rf-GOM">
+                                        <rect key="frame" x="13" y="2" width="33" height="35"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alr-db-1A0">
+                                        <rect key="frame" x="0.0" y="0.0" width="269" height="40"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="hJQ-RZ-hYN" kind="show" id="fg9-In-1zo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="53" y="485" width="269" height="40"/>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196081399917603" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="8av-ok-5h7"/>
+                                <exclude reference="8Cf-Fr-hDt"/>
+                                <exclude reference="k97-AP-bA6"/>
+                                <exclude reference="hWA-qR-4jY"/>
+                                <exclude reference="0R1-c2-hOs"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="8av-ok-5h7"/>
+                                <include reference="8Cf-Fr-hDt"/>
+                                <include reference="k97-AP-bA6"/>
+                                <include reference="hWA-qR-4jY"/>
+                                <include reference="0R1-c2-hOs"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vxA-RN-bvX" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4471.5" y="-383.25"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bleubutton" width="512" height="100"/>
+        <image name="cat" width="397" height="397"/>
         <image name="cat-exemple" width="1536" height="1536"/>
         <image name="circle2" width="208" height="203"/>
         <image name="connexion-normal" width="292" height="48"/>
+        <image name="continue" width="398" height="503"/>
+        <image name="email" width="512" height="512"/>
+        <image name="email-b" width="512" height="512"/>
         <image name="envoyer-normal" width="307" height="52"/>
         <image name="home.png" width="64" height="64"/>
         <image name="info" width="128" height="128"/>
@@ -1282,6 +1466,7 @@
         <image name="setting.png" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="fg9-In-1zo"/>
         <segue reference="8JU-vA-Ote"/>
         <segue reference="ICd-GF-au1"/>
     </inferredMetricsTieBreakers>
