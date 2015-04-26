@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1080A2C1AEBD4FC005DA532 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1080A2A1AEBD4FC005DA532 /* FBSDKCoreKit.framework */; };
+		A1080A2D1AEBD4FC005DA532 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1080A2B1AEBD4FC005DA532 /* FBSDKLoginKit.framework */; };
 		A933EE221AEAAE7100A70FA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A933EE211AEAAE7100A70FA2 /* Foundation.framework */; };
 		A933EE241AEAAE7700A70FA2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A933EE231AEAAE7700A70FA2 /* CoreGraphics.framework */; };
 		A933EE261AEAAE7D00A70FA2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A933EE251AEAAE7D00A70FA2 /* UIKit.framework */; };
@@ -29,11 +31,8 @@
 		A933EE791AEAB39900A70FA2 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = A933EE6F1AEAB39900A70FA2 /* profile.png */; };
 		A933EE7A1AEAB39900A70FA2 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = A933EE701AEAB39900A70FA2 /* setting.png */; };
 		A933EE7D1AEAB3E900A70FA2 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A933EE7C1AEAB3E900A70FA2 /* SWRevealViewController.m */; };
-		A950D0391AE7938E00710AAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A950D0371AE7938E00710AAE /* Main.storyboard */; };
 		A950D03E1AE7938E00710AAE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A950D03C1AE7938E00710AAE /* LaunchScreen.xib */; };
 		A950D04A1AE7938F00710AAE /* CaTinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A950D0491AE7938F00710AAE /* CaTinderTests.swift */; };
-		A97EFCE91AE8FCB90030582C /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97EFCE81AE8FCB90030582C /* FBSDKCoreKit.framework */; };
-		A97EFCF11AE91D0F0030582C /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97EFCF01AE91D0F0030582C /* FBSDKLoginKit.framework */; };
 		A9FD6F0D1AEBB6BD00AA6485 /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD6F091AEBB6BD00AA6485 /* DraggableView.swift */; };
 		A9FD6F0E1AEBB6BD00AA6485 /* DraggableViewBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD6F0A1AEBB6BD00AA6485 /* DraggableViewBackground.swift */; };
 		A9FD6F0F1AEBB6BD00AA6485 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD6F0B1AEBB6BD00AA6485 /* OverlayView.swift */; };
@@ -51,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A1080A2A1AEBD4FC005DA532 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		A1080A2B1AEBD4FC005DA532 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		A933EE211AEAAE7100A70FA2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A933EE231AEAAE7700A70FA2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A933EE251AEAAE7D00A70FA2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -76,13 +77,10 @@
 		A933EE7B1AEAB3E900A70FA2 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = CaTinder/SWRevealViewController.h; sourceTree = "<group>"; };
 		A933EE7C1AEAB3E900A70FA2 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = CaTinder/SWRevealViewController.m; sourceTree = "<group>"; };
 		A950D02C1AE7938E00710AAE /* CaTinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaTinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A950D0381AE7938E00710AAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A950D03D1AE7938E00710AAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A950D0431AE7938F00710AAE /* CaTinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaTinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A950D0481AE7938F00710AAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A950D0491AE7938F00710AAE /* CaTinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaTinderTests.swift; sourceTree = "<group>"; };
-		A97EFCE81AE8FCB90030582C /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		A97EFCF01AE91D0F0030582C /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		A9FD6F091AEBB6BD00AA6485 /* DraggableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
 		A9FD6F0A1AEBB6BD00AA6485 /* DraggableViewBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableViewBackground.swift; sourceTree = "<group>"; };
 		A9FD6F0B1AEBB6BD00AA6485 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
@@ -95,10 +93,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A933EE261AEAAE7D00A70FA2 /* UIKit.framework in Frameworks */,
+				A1080A2C1AEBD4FC005DA532 /* FBSDKCoreKit.framework in Frameworks */,
+				A1080A2D1AEBD4FC005DA532 /* FBSDKLoginKit.framework in Frameworks */,
 				A933EE241AEAAE7700A70FA2 /* CoreGraphics.framework in Frameworks */,
 				A933EE221AEAAE7100A70FA2 /* Foundation.framework in Frameworks */,
-				A97EFCE91AE8FCB90030582C /* FBSDKCoreKit.framework in Frameworks */,
-				A97EFCF11AE91D0F0030582C /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,13 +142,13 @@
 		A950D0231AE7938E00710AAE = {
 			isa = PBXGroup;
 			children = (
+				A1080A2A1AEBD4FC005DA532 /* FBSDKCoreKit.framework */,
+				A1080A2B1AEBD4FC005DA532 /* FBSDKLoginKit.framework */,
 				A933EE251AEAAE7D00A70FA2 /* UIKit.framework */,
 				A933EE231AEAAE7700A70FA2 /* CoreGraphics.framework */,
 				A933EE211AEAAE7100A70FA2 /* Foundation.framework */,
 				A933EDD21AEA7A4700A70FA2 /* SWRevealViewController */,
 				A933ED9E1AEA6F1D00A70FA2 /* SidebarMenu */,
-				A97EFCF01AE91D0F0030582C /* FBSDKLoginKit.framework */,
-				A97EFCE81AE8FCB90030582C /* FBSDKCoreKit.framework */,
 				A950D02D1AE7938E00710AAE /* Products */,
 				A950D02E1AE7938E00710AAE /* CaTinder */,
 				A950D0461AE7938F00710AAE /* CaTinderTests */,
@@ -174,7 +172,6 @@
 				A9FD6F0B1AEBB6BD00AA6485 /* OverlayView.swift */,
 				A9FD6F0C1AEBB6BD00AA6485 /* ViewController.swift */,
 				A950D03C1AE7938E00710AAE /* LaunchScreen.xib */,
-				A950D0371AE7938E00710AAE /* Main.storyboard */,
 				A933EE5E1AEAB22000A70FA2 /* AppDelegate.swift */,
 				A933EE5F1AEAB22000A70FA2 /* FBBridge.h */,
 				A933EE601AEAB22000A70FA2 /* FirstViewController.swift */,
@@ -296,7 +293,6 @@
 				A933EE791AEAB39900A70FA2 /* profile.png in Resources */,
 				A933EE751AEAB39900A70FA2 /* home.png in Resources */,
 				A933EE7A1AEAB39900A70FA2 /* setting.png in Resources */,
-				A950D0391AE7938E00710AAE /* Main.storyboard in Resources */,
 				A933EE771AEAB39900A70FA2 /* logo.png in Resources */,
 				A933EE761AEAB39900A70FA2 /* image.jpg in Resources */,
 				A950D03E1AE7938E00710AAE /* LaunchScreen.xib in Resources */,
@@ -354,14 +350,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A950D0371AE7938E00710AAE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A950D0381AE7938E00710AAE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A950D03C1AE7938E00710AAE /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
