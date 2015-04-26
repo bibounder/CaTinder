@@ -23,6 +23,9 @@ class DraggableView : UIView {
     var originalPoint : CGPoint
     var overlayView : OverlayView
     var information : UILabel
+    var imageBack   : UIView
+    var viewOverlay : UIView
+    var data : NSDictionary?
     
     required init(coder aDecoder: NSCoder) {
         xFromCenter = 0.0
@@ -31,9 +34,10 @@ class DraggableView : UIView {
         originalPoint = CGPoint()
         overlayView = OverlayView(coder: aDecoder)
         information = UILabel()
+        imageBack   = UIView()
+        viewOverlay = UIView()
         super.init(coder: aDecoder)
     }
-    
     override init(frame: CGRect) {
         xFromCenter = 0.0
         yFromCenter = 0.0
@@ -41,23 +45,23 @@ class DraggableView : UIView {
         originalPoint = CGPoint()
         overlayView = OverlayView(coder: NSCoder())
         information = UILabel()
-        
+        imageBack = UIView()
+        viewOverlay = UIView()
         super.init(frame: frame)
-        
-        information = UILabel(frame: CGRectMake(0, 260, self.frame.size.width, 50))
+        imageBack   = UIView(frame: CGRectMake(0, 0, self.frame.size.width, 240))
+        information = UILabel(frame: CGRectMake(0, 190, self.frame.size.width, 50))
         information.text = "no info given"
         information.textAlignment = NSTextAlignment.Center
-        information.textColor = UIColor.blackColor()
-        information.backgroundColor = UIColor(red:255/255, green:255/255,blue:255/255,alpha:0.5)
-        
-        self.backgroundColor = UIColor(red:72/255, green:145/255,blue:206/255,alpha:1)
-        
+        information.textColor = UIColor.whiteColor()
+        information.backgroundColor = UIColor(red:0/255, green:0/255,blue:0/255,alpha:0.5)
+
+        self.backgroundColor = UIColor.whiteColor()
         
         panGestureRecognizer = UIPanGestureRecognizer(target: self, action: "beingDragged:")
         
         self.addGestureRecognizer(panGestureRecognizer)
+        self.addSubview(imageBack)
         self.addSubview(information)
-        
         overlayView = OverlayView(frame: CGRectMake(0, 0, 240, 240))
         overlayView.alpha = 0
         self.addSubview(overlayView)
@@ -174,7 +178,7 @@ class DraggableView : UIView {
         }
         
         println("YES")
-        
+        // TODO!!
     }
     
     func leftAction() {
@@ -186,9 +190,12 @@ class DraggableView : UIView {
                 self.removeFromSuperview()
         }
         
+        // TODO!
         println("NO")
         
     }
+    //var checkButton : UIButton
+    //var viewOverlay : UIView
     
     func rightClickAction() {
         var finishPoint : CGPoint = CGPointMake(600, self.center.y)
@@ -200,8 +207,8 @@ class DraggableView : UIView {
                 self.removeFromSuperview()
         }
         overlayView.setMode(GGOverlayViewMode.GGOverlayViewModeRight)
+        // TODO dislike
         println("Yes")
-        
     }
     
     func leftClickAction() {
@@ -214,9 +221,9 @@ class DraggableView : UIView {
                 self.removeFromSuperview()
         }
         overlayView.setMode(GGOverlayViewMode.GGOverlayViewModeLeft)
+        // TODO like
         println("No")
         
     }
-    
     
 }
